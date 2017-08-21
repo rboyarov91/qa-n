@@ -2,12 +2,10 @@ import React, { Component } from 'react';
 
 class App extends Component {
 	render() {
-		return (<html>
-					<header><title>This is title</title></header>
-					<body>
-					Hello world
-					</body>
-				</html>);
+		return (<div>
+	<h1>Hello World</h1>
+	<p>This is a basic html template to test functionality</p>
+</div>);
 	}
 }
 
