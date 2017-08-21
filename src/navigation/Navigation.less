@@ -1,0 +1,43 @@
+.Navigation {
+
+  .Navigation;
+}
+
+.Navigation() {
+
+  ul {
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: absolute;
+    top: 22px;
+    right: 28px;
+    z-index: 10;
+    font-size: 15px;
+  }
+
+  li {
+    list-style: none;
+    float: left;
+    margin-left: 28px;
+  }
+
+  li:first-child {
+    padding-bottom: 2px;
+  }
+
+  li a:hover {
+    border-bottom: 1px solid #a99c95;
+  }
+
+  li.current-menu-item a {
+    color: #a99c95;
+    border-bottom: 1px solid #a99c95;
+  }
+
+  &-items-menu:hover {
+    outline: 0;
+    color: #a99c95;
+    border-bottom: 1px solid #a99c95;
+  }
+}
