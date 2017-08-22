@@ -16,7 +16,6 @@ class TabContainer extends Component {
 		this.setState({
 			graphActive: tabId === "graph"
 		})
-		console.log(this.state.graphActive);
 	}
 
 	render() {
