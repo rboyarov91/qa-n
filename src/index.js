@@ -13,7 +13,7 @@ ReactDOM.render(
 	<Router>
   		<div>
   			<Route path='/' component={App} />
-    		<Route path='/home' component={App} />
+    		<Route path='/user' component={App} />
     		<Route path='/test' component={App} />
   		</div>
 	</Router>, 

@@ -13,7 +13,7 @@ class Header extends Component {
 
 	componentDidMount() {
 		// Perform http call, using sample text for now
-		this.setState({navItems:[{href:"/", target:"_self", text:"User"}]})
+		this.setState({navItems:[{href:"/user", target:"_self", text:"User"}]})
 	}
 
 	render() {
