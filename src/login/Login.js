@@ -38,6 +38,7 @@ class Login extends Component {
 	}
 
 	handleButtonPress = () => {
+		// TODO send post to backend once up
 		console.log("Button pressed");
 	}
 
