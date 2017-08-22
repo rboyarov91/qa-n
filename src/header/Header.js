@@ -13,7 +13,7 @@ class Header extends Component {
 
 	componentDidMount() {
 		// Perform http call, using sample text for now
-		this.setState({navItems:[{href:"/", target:"_self", text:"User"}, {href:"/", target:"_self", text:"Tools"}]})
+		this.setState({navItems:[{href:"/", target:"_self", text:"User"}]})
 	}
 
 	render() {
@@ -22,7 +22,7 @@ class Header extends Component {
 			<header className="clearHeader">
 				<div className="content">
 					<Logo />
-					<Navigation navigationItems={this.state.navItems}/>
+					<Navigation navigationItems={this.state.navItems} handleClick={() => this.props.handleClick()}/>
 				</div>
 			</header>
 			</div>
