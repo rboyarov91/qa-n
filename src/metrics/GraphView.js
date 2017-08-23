@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import Chart from '../components/chart/Chart'
 
 class GraphView extends Component {
 	render() {
-		return <h1>GRAPHVIEW</h1>
+		return <Chart id="Testing"/>
 	}
 }
 
