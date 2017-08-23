@@ -1,27 +1,67 @@
-.SimpleTable {
-  .SimpleTable;
+.Table {
+  .Table;
 }
 
-.SimpleTable() {
+.Table {
+  border: 1px solid #ccc;
   border-collapse: collapse;
-  width: 100%;
-  margin-top: 20px;
-
-  thead,
+  margin: 0;
+  padding: 0;
+  table-layout: fixed;
+  caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+  }
   tr {
-    vertical-align: center;
-    border: 0;
-    padding: 0;
-    outline: 0;
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em;
   }
-
   th {
-    border-bottom: 2px solid #6678b1;
-    padding: 10px 8px;
-  }
-
-  td {
+    padding: .625em;
     text-align: center;
-    border-bottom: 1px solid #ccc;
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  td {
+    padding: .625em;
+    text-align: center;
   }
 }
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+    thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+    }
+    td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+      &:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+}
+
