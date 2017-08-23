@@ -60,7 +60,7 @@ class Table extends Component {
 				<table className="Table">
 					<thead>
 						<tr>
-							{this.state.headings.map((heading) => <th scope="col">{heading}</th>)}
+							{this.state.headings.map((heading, i) => <th key={i} scope="col">{heading}</th>)}
 						</tr>
 					</thead>
 					<tbody>
