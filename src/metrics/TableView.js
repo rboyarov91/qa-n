@@ -3,7 +3,7 @@ import Table from '../components/table/Table'
 
 class TableView extends Component {
 	render() {
-		return <Table />
+		return <Table data={this.props.data}/>
 	}
 }
 
