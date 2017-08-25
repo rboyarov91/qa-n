@@ -24,11 +24,14 @@ class TabContainer extends Component {
 
 	getSiteData = () => {
 		const url = BASE_URL + '/api/siteInfo'
-		return axios.get(url).then(response => response.data);
+		return axios.get(url)
+		.then(response => response.data)
+		.catch((error) => {
+			console.log("tab container axios error", error)
+		});
 	}
 
 	componentDidMount() {
-		const url = BASE_URL + '/api/siteInfo'
 		//console.log("Setting state to: " + this.getSiteData())
 		this.getSiteData().then((data) => {
 			this.setState({siteData:data})

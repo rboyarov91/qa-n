@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Chart from '../components/chart/Chart'
+import Loader from '../components/loader/Loader'
 
 class GraphView extends Component {
 
@@ -15,7 +16,7 @@ class GraphView extends Component {
 
 	getColumn = (jsonData, index, strip) => {
 		let data = []
-		jsonData.map((row, i) => {
+		jsonData.forEach((row, i) => {
 			data.push(Object.values(row)[index])
 			//console.log("found at row " + i + " : " + Object.values(row)[index])
 		})
@@ -30,13 +31,12 @@ class GraphView extends Component {
 	render() {
 		//console.log("parsing: " + this.props.data)
 		if (this.props.data === null) {
-			return <div className="Loader"></div>
+			return <Loader/>
 		}
 		let parsedData = JSON.parse(this.props.data)
 		let allHeadings = this.getHeadings(parsedData);
 		allHeadings.shift()
 		let labels = this.getColumn(parsedData,0, false);
-		let test = this.getColumn(parsedData,1, true)
 		return (
 			<div className={GraphView.name}>
 				<ul>
