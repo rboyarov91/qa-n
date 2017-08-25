@@ -28,6 +28,10 @@ class GraphView extends Component {
 	}
 
 	render() {
+		//console.log("parsing: " + this.props.data)
+		if (this.props.data === null) {
+			return <div className="Loader"></div>
+		}
 		let parsedData = JSON.parse(this.props.data)
 		let allHeadings = this.getHeadings(parsedData);
 		allHeadings.shift()
