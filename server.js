@@ -39,7 +39,7 @@ app.use(function(req, res, next) {
 //now  we can set the route path & initialize the API
 router.get('/', function(req, res) {
   //res.json({ message: 'API Initialized!'});
-  res.json({massage: api.getSiteInfo()})
+  res.json({data: api.getSiteInfo_Test()})
 });
 
 router.get('/siteInfo', (req, resp) => {
