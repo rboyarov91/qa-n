@@ -39,6 +39,11 @@
   font-style: italic;
 }
 
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 body {
   font-family: 'europa', sans-serif;
   padding: 0;
@@ -59,3 +64,5 @@ p {
 @import './navigation/Navigation';
 @import './menu/All';
 @import './login/Login';
+@import './metrics/All';
+@import './components/All';
