@@ -5,7 +5,7 @@
 import express from 'express'
 import mongoose from 'mongoose'
 import bodyParser from 'body-parser'
-import api from './src/backend/api'
+import api from './api'
 /*
 es5 approach
 var express = require('express');
