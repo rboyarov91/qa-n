@@ -32,7 +32,6 @@ $ npm install
 ### Development
 
 QA-& leverages Gulp and Facebook's [react-scripts](https://github.com/facebookincubator/create-react-app/tree/master/packages/react-scripts)
-Make a change in your file and instantanously see your updates!
 
 Open your favorite Terminal and run these commands.
 
