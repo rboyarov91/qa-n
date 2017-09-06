@@ -1,7 +1,6 @@
 # QA-&
 
-QA-& is a sample application using a MERN stack utilizing es6 with babel to compile it to es5 and gulp for task automation.
-The goal of QA-& is to provide website analytics. 
+QA-& is a sample application using a MERN stack utilizing es6 with babel to compile it to es5, less for frontend styling compiled to css and gulp for task automation. The goal of QA-& is to provide website analytics. 
 
   - MongoDb
   - Express
@@ -10,7 +9,7 @@ The goal of QA-& is to provide website analytics.
 
 ### Installation
 
-QA-& requires [Node.js](https://nodejs.org/) v8+ to run.
+QA-& requires [Node.js](https://nodejs.org/) v8.4+ to run and node package manager ([npm](https://www.npmjs.com/)) v5.4+ for dependency management. 
 For data persistance [MongoDb](https://www.mongodb.com/) v3.4.7+ required
 
 Install MongoDb and make sure it's running. 
